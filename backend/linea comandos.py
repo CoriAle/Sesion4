@@ -110,3 +110,25 @@ profe = Profesor.objects.create(
 )
 
 profe.creado
+
+
+Estudiante.objects.create(
+	nombre="Elmo Cifuente",
+	telefono="4797789",
+	direccion="13 Av. 6-8, zona 3",
+	sexo=True,
+	carnet="201908078"
+)
+
+
+Docente.objects.create(
+	nombre="Noel Gómez",
+	telefono="556497",
+	direccion="14 Av. 7-2, zona 1",
+	titulo="Ing. ",
+	nit="1234567k"
+)
+
+Docente.objects.all()
+Estudiante.objects.all()
+Persona.objects.all()
