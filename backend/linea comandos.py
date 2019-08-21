@@ -93,12 +93,20 @@ Profesor.objects.create(
 )
 
 Profesor.objects.create(
+
+
 	nombre="Obi-Wan",
 	apellido="Kenobi"
 )
-Profesor.objects.create(
+
+
+Profesor.objects.all()
+Profesor.objects.all().delete()
+Profesor.original_objects.all()
+
+profe = Profesor.objects.create(
 	nombre="Denzel",
 	apellido="Crocker"
 )
 
-
+profe.creado
