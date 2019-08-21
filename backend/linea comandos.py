@@ -24,7 +24,8 @@ futeca.cancha
 lai = lugares[1]
 lai.restaurant
 
-
+canchas = Cancha.objects.all()
+print(canchas.query)
 	"""
 
 from backend.models import *
@@ -50,6 +51,9 @@ Animal.objects.create(
 	edad=1,
 )
 
+
+gato = Gato.objects.all()
+print(gato.query)
 
 from backend.models import *
 
@@ -78,3 +82,23 @@ ProductoVenta.objects.create(
 		costo=0.80,
 		precio=2.00
 	)
+
+
+
+
+
+Profesor.objects.create(
+	nombre="Ricardo",
+	apellido="Jirafales"
+)
+
+Profesor.objects.create(
+	nombre="Obi-Wan",
+	apellido="Kenobi"
+)
+Profesor.objects.create(
+	nombre="Denzel",
+	apellido="Crocker"
+)
+
+
